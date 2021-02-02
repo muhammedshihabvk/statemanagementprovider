@@ -34,15 +34,15 @@ A new Flutter application.
 				home:  Page1(),
 				),
 			);
-		a. }
+		 }
 		
 	
 	4. pull data Using  provider 
 		
-		a. Provider.of<ProviderDemo>(context). Class variable and method
+		a. Provider.of<ProviderDemo>(context).method/variable (provider class variable and method)
 		
 		Eg: Provider.of<ProviderDemo>(context).test1
-			Provider.of<ProviderDemo>(context).changeValue
+		    Provider.of<ProviderDemo>(context).changeValue()
 			
 	5. Using Consumer
 	
