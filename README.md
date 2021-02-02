@@ -24,14 +24,14 @@ A new Flutter application.
 			}
 		}
 		
-	3. Initialize provider at main.dart
+	3. Initialize single provider at main.dart
 	
 		Widget build(BuildContext context){
 			Return ChangeNotifierProvider(
 				create:(context)=>ProviderDemo(),
 				child: MaterialApp(
-				title:'FlutterDemo',
-				home:  Page1(),
+					title:'FlutterDemo',
+					home:  Page1(),
 				),
 			);
 		 }
@@ -46,14 +46,14 @@ A new Flutter application.
 			
 	5. Using Consumer
 	
-		Below code will set the text value from provider
+		//Below code will set the text value from provider
 		Consumer<ProviderDemo>(
 			builder:(context,value,child){
 				Return Text(value.test1,style:TextStyle(fontSize:20,fontWeight:FontWeight.bold),);
 			},
 		),
 		
-		Below code will return provider widget
+		//Below code will return provider widget
 		Consumer<ProviderDemo>(
 			builder:(context,value,child){
 				Return value.widget();
@@ -62,7 +62,20 @@ A new Flutter application.
 		
 		
 	6. MultiProvider
-Can add multiple providers to main.dart by list of provider like below
+	//Can add multiple providers to main.dart by list of provider like below
+			Widget build(BuildContext context){
+				Return MultiProvider(
+					Providers: [
+						ChangeNotifierProvider(create:(context)=>ProviderDemo1(),
+						ChangeNotifierProvider(create:(context)=>ProviderDemo2(),
+					]
+					child: MaterialApp(
+						title:'FlutterDemo',
+						home:  Page1(),
+					),
+				);
+			}
+
 
 
 
