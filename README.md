@@ -3,7 +3,11 @@
 A new Flutter application.
 
 ![Image description](sample1.PNG)
+![Image description](sample1-1.PNG)
+![Image description](sample1-2.PNG)
 ![Image description](sample2.PNG)
+![Image description](sample3.PNG)
+
 
 ## Getting Started
 
